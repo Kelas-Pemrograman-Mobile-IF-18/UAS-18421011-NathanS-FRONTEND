@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".Game9">
+
+    <!--body-->
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/bg9"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"/>
+
+            <!--detail-->
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:padding="15dp"
+                android:background="@drawable/background_viewall"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="WWE 2K20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" />
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:text="2K invites players to Step Inside the squared circle with WWE 2K20, available October 22. Your favorite WWE Superstars, Legends, Hall of Famers and NXT’s best will join the festivities and celebrate the rebirth of the WWE 2K franchise!"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" />
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:text="Rp 620 000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" />
+                <Button
+                    android:backgroundTint="#0c4c82"
+                    android:textAllCaps="false"
+                    android:text="Beli"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:id="@+id/btnStoreGame9"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                    app:strokeColor="#0c4c82"
+                    app:strokeWidth="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Store Page"
+                    android:textAllCaps="false"
+                    android:textColor="#0c4c82"
+                    app:icon="@drawable/ic_steam"
+                    app:iconTint="#0c4c82" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!--bar bawah-->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        app:menu="@menu/navigation_menu"
+        app:labelVisibilityMode="unlabeled"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/barbawah" />
+
+</LinearLayout>

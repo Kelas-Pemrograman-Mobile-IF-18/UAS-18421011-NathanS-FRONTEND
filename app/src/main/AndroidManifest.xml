@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.nathans.steam">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/steamlogo2"
+        android:label="Steam.ind"
+        android:roundIcon="@drawable/steamlogo2"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Steam"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Admin.EDWallet" />
+        <activity android:name=".Admin.EDGame" />
+        <activity android:name=".Admin.InputWallet" />
+        <activity android:name=".Admin.InputGame" />
+        <activity android:name=".Admin.ActivityDataWallet" />
+        <activity android:name=".Admin.ActivityDataGames" />
+        <activity android:name=".User.Wallet" />
+        <activity android:name=".User.DetailWallet" />
+        <activity android:name=".User.Games" />
+        <activity android:name=".User.DetailGames" />
+        <activity android:name=".User.Cart" />
+        <activity android:name=".User.DetailCart" />
+        <activity android:name=".AImage" />
+        <activity android:name=".DanaGames" />
+        <activity android:name=".DanaWallet" />
+        <activity android:name=".HalamanUser" />
+        <activity android:name=".HalamanAbout" />
+        <activity android:name=".HalamanAlt" />
+        <activity android:name=".HalamanPy2" />
+        <activity android:name=".PayAlfaGames" />
+        <activity android:name=".PayIndoGames" />
+        <activity android:name=".PayAlfaWallet" />
+        <activity android:name=".PayIndoWallet" />
+        <activity android:name=".HalamanAdmin" />
+        <activity android:name=".HalamanProfile" />
+        <activity android:name=".HalamanSignup" />
+        <activity android:name=".HalamanWallet" />
+        <activity android:name=".HalamanGames" />
+        <activity android:name=".HalamanMenu" />
+        <activity android:name=".HalamanSignin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

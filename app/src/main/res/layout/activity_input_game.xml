@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:padding="15dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/background_signin">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:stretchColumns="1">
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
+                        android:background="#FFF">
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Input Steam Game"
+                            android:textColor="#636E72"
+                            android:textSize="20dp"
+                            android:textStyle="bold"/>
+
+                        //Game Code
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="#636E72"
+                            android:layout_marginTop="15dp"
+                            android:hint="Game Code">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="#636E72"
+                                android:textSize="14dp"
+                                android:textColorHint="#636E72"
+                                android:id="@+id/edtCodeGame"
+                                android:inputType="textAutoComplete"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        //Game Name
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Title"
+                            android:textColorHint="#636E72"
+                            android:layout_marginTop="5dp">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="#636E72"
+                                android:textSize="14dp"
+                                android:id="@+id/edtNamaGame"
+                                android:textColorHint="#636E72"
+                                android:inputType="textAutoComplete"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        //Developer
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Developer"
+                            android:textColorHint="#636E72"
+                            android:layout_marginTop="5dp">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="#636E72"
+                                android:textSize="14dp"
+                                android:id="@+id/edtDeveloper"
+                                android:textColorHint="#636E72"
+                                android:inputType="textAutoComplete"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        //Release Date
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Release Date"
+                            android:textColorHint="#636E72"
+                            android:layout_marginTop="5dp">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="#636E72"
+                                android:textSize="14dp"
+                                android:id="@+id/edtRdate"
+                                android:textColorHint="#636E72"
+                                android:inputType="textAutoComplete"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        //Game Price
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Value"
+                            android:textColorHint="#636E72"
+                            android:layout_marginTop="5dp">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="#636E72"
+                                android:textSize="14dp"
+                                android:id="@+id/edtHarga"
+                                android:textColorHint="#636E72"
+                                android:inputType="textEmailAddress"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <ImageView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:id="@+id/gambar"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </TableLayout>
+
+            <Button
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:visibility="gone"
+                android:id="@+id/btnUploadGambar"
+                android:text="Set Image"
+                app:backgroundTint="#0C43CF"/>
+            <Button
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:text="Take Image"
+                android:id="@+id/btnTakeImage"
+                app:backgroundTint="#0C43CF" />
+            <Button
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:text="Input"
+                android:id="@+id/inputGame"
+                app:backgroundTint="#0C43CF" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".HalamanSignin">
+
+    <!--Sign In-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="20dp"
+        android:background="@drawable/background_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--Sign In Logo-->
+        <ImageView
+            android:src="@drawable/signin"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+
+        <!--Username-->
+        <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:labelText="Username">
+
+            <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+        <!--Password-->
+        <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:labelText="Password">
+
+            <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                android:inputType="textPassword"
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+        <!--Button-->
+        <Button
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="Sign In"
+            android:id="@+id/btnSignin"
+            android:textAllCaps="false"
+            app:backgroundTint="#0C43CF" />
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="-10dp"
+            android:layout_gravity="center"
+            android:text="Join Steam Now"
+            android:id="@+id/btnJoin"
+            android:background="?android:attr/selectableItemBackground"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+</LinearLayout>
